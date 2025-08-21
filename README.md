@@ -1,49 +1,111 @@
-# Getting Started with Create React App
+# ⚡ DaVinci - Multi-Model AI Chat Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A powerful React-based chat application that allows you to interact with multiple AI models simultaneously. Built with modern web technologies and designed for seamless multi-model conversations.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Multi-Model Chat**: Chat with ChatGPT 5, Claude Sonnet 4, Claude Opus 4.1, Deepseek R1, Gemini 2.5 Pro, and Grok 4 simultaneously
+- **Image Upload & Analysis**: Upload images and get insights from vision-capable models
+- **LaTeX Rendering**: Beautiful mathematical formula rendering with KaTeX
+- **Chat History**: Persistent conversation history with Supabase integration
+- **Responsive Design**: Works perfectly on desktop and mobile devices
+- **Real-time Updates**: Live responses from multiple AI models
+- **Modern UI**: Claude-inspired design with orange accent colors and dark theme
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 19, CSS3, JavaScript ES6+
+- **AI Integration**: OpenRouter API for multi-model access
+- **Database**: Supabase for chat history and user management
+- **Math Rendering**: KaTeX for LaTeX formula display
+- **Icons**: React Icons (Feather Icons)
+- **Deployment**: Vercel with GitHub integration
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/da-vinci.git
+   cd da-vinci
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. **Set up environment variables**
+   Create a `.env` file in the root directory:
+   ```env
+   REACT_APP_OPENROUTER_API_KEY=your_openrouter_api_key
+   REACT_APP_SUPABASE_URL=your_supabase_url
+   REACT_APP_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Set up Supabase database**
+   Run the SQL commands from `supabase-schema.sql` in your Supabase SQL editor.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🌐 Deployment
 
-### `npm run eject`
+### Vercel Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Push to GitHub**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Deploy to Vercel**
+   - Connect your GitHub repository to Vercel
+   - Add environment variables in Vercel dashboard
+   - Deploy automatically on every push
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Environment Variables for Production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Set these in your Vercel dashboard:
+- `REACT_APP_OPENROUTER_API_KEY`
+- `REACT_APP_SUPABASE_URL`
+- `REACT_APP_SUPABASE_ANON_KEY`
 
-## Learn More
+## 🎯 Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Enable Models**: Toggle the models you want to chat with
+2. **Start Chatting**: Type your message or upload an image
+3. **View Responses**: See responses from all enabled models simultaneously
+4. **Access History**: Click the clock icon to view past conversations
+5. **Math Support**: Use LaTeX syntax for mathematical expressions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔧 Available Scripts
+
+- `npm start` - Run development server
+- `npm run build` - Build for production
+- `npm test` - Run tests
+- `npm run eject` - Eject from Create React App
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+
+**Built with ❤️ by Amrit Pant, in Kathmandu**
+
+---
+
+*DaVinci - Empowering conversations with multiple AI models*
 
 ### Code Splitting
 

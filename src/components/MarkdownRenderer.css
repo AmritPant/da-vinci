@@ -1,0 +1,224 @@
+.markdown-content {
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+.markdown-content * {
+  margin: 0;
+  padding: 0;
+}
+
+.markdown-p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.markdown-p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #f97316;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 8px;
+}
+
+.markdown-h1:first-child {
+  margin-top: 0;
+}
+
+.markdown-h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f97316;
+  margin-bottom: 12px;
+  margin-top: 20px;
+}
+
+.markdown-h2:first-child {
+  margin-top: 0;
+}
+
+.markdown-h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin-bottom: 10px;
+  margin-top: 16px;
+}
+
+.markdown-h3:first-child {
+  margin-top: 0;
+}
+
+.markdown-strong {
+  font-weight: 700;
+  color: #fbbf24;
+}
+
+.markdown-em {
+  font-style: italic;
+  color: #fbbf24;
+}
+
+.markdown-ul, .markdown-ol {
+  margin-bottom: 12px;
+  padding-left: 20px;
+}
+
+.markdown-li {
+  margin-bottom: 4px;
+  color: #e5e5e5;
+}
+
+.markdown-li::marker {
+  color: #f97316;
+}
+
+.code-block {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+  overflow-x: auto;
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.code-block code {
+  background: transparent;
+  color: #e5e5e5;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.inline-code {
+  background: rgba(249, 115, 22, 0.2);
+  color: #fbbf24;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-size: 0.9em;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.markdown-blockquote {
+  border-left: 4px solid #f97316;
+  background: rgba(249, 115, 22, 0.1);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #e5e5e5;
+}
+
+.markdown-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  background: rgba(42, 42, 42, 0.6);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown-thead {
+  background: rgba(249, 115, 22, 0.2);
+}
+
+.markdown-th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #f97316;
+  border-bottom: 2px solid #444;
+}
+
+.markdown-td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #444;
+  color: #e5e5e5;
+}
+
+.markdown-tr:last-child .markdown-td {
+  border-bottom: none;
+}
+
+.markdown-tr:nth-child(even) {
+  background: rgba(60, 60, 60, 0.3);
+}
+
+/* Math expressions styling */
+.math-display-wrapper {
+  margin: 12px 0;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.math-inline-wrapper {
+  display: inline;
+}
+
+.math-error {
+  background: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 107, 107, 0.3);
+  font-size: 14px;
+}
+
+/* Legacy math styling for fallback */
+.math-display {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  color: #fbbf24;
+  font-style: italic;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.math-inline {
+  background: rgba(249, 115, 22, 0.2);
+  color: #fbbf24;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .code-block {
+    padding: 12px;
+    font-size: 13px;
+  }
+  
+  .markdown-table {
+    font-size: 14px;
+  }
+  
+  .markdown-th,
+  .markdown-td {
+    padding: 8px;
+  }
+  
+  .katex-display {
+    font-size: 1.1em !important;
+  }
+}
